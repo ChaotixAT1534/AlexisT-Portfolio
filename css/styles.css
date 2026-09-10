@@ -109,22 +109,24 @@ body {
 }
 
 /*About Section*/
-.about{
-	background: #BF0F0F;
-	margin-bottom: 0px;
-	margin-right: 540px;
-	padding-top: 5px;
-	color: #F2F2F2;
+.container {
+  display: flex;             /* Turns on flexbox */
+  align-items: center;       /* Centers items vertically */
+  justify-content: space-between; /* Spreads text and image apart */
+  gap: 20px;                 /* Adds space between text and image */
 }
 
-.about p{
-	font-size: 1.2em;
-}
-.about img{
-	margin-bottom: 800px;
-	margin-left:750px; 
+.text-content {
+  flex: 1;                   /* Makes text take up available space */
 }
 
+.image-content img {
+  max-width: 100%;           /* Keeps image responsive */
+  height: auto;
+}
+}
+
+/*App Section*/
 .welcome-app{
 	text-align: center;
 	padding-top:50px;
