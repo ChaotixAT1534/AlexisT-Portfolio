@@ -59,6 +59,17 @@ body {
   padding: 20px;
 }
 
+.third-row{
+	display:flex
+}
+.third-row img{
+  margin: 10px;
+	margin-left: 75px;
+  padding: 20px;
+}
+.third-row a:hover{
+	background: rgba(242, 242, 242,0.3);
+}
 
 .hidden{
 	color:#F2F2F2;
@@ -110,23 +121,24 @@ body {
 
 /*About Section*/
 .container {
-  display: flex;             /* Turns on flexbox */
-  align-items: center;       /* Centers items vertically */
-  justify-content: space-between; /* Spreads text and image apart */
-  gap: 20px;                 /* Adds space between text and image */
-}
+            display: flex;       /* Aligns children side-by-side */
+            align-items: center; /* Centers items vertically */
+            gap: 20px;           /* Adds space between image and text */
+            max-width: 800px;    /* Optional: Limits layout width */
+            margin: 0 auto;      /* Optional: Centers container on page */
+        }
 
-.text-content {
-  flex: 1;                   /* Makes text take up available space */
-}
+        .container img {
+            width: 300px;        /* Adjust size as needed */
+            height: auto;        /* Maintains aspect ratio */
+        }
 
-.image-content img {
-  max-width: 100%;           /* Keeps image responsive */
-  height: auto;
-}
-}
+        .text-content {
+            flex: 1;             /* Takes up remaining available space */
+			color:#260303;
+        }
 
-/*App Section*/
+
 .welcome-app{
 	text-align: center;
 	padding-top:50px;
@@ -319,6 +331,25 @@ body {
 }
 
 .neigh-cent{
+	margin-left: 300px;
+	margin-top: 50px;
+}
+
+.ball-img{
+	text-align: center;
+}
+
+.info-main{
+	text-align: center;
+	padding-top:50px;
+	padding-left:250px;
+	padding-right: 250px;
+	padding-bottom: 50px;
+	background: #00444C;
+	color: #F2F2F2;
+	font-size: 1.3em;
+}
+.info-cent{
 	margin-left: 300px;
 	margin-top: 50px;
 }
